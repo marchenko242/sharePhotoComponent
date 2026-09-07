@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="AppControls" constructor="ShareFile" version="0.0.3" display-name-key="ShareFile" description-key="Control to download and share documents" control-type="standard">
+    <property name="fileRaw" display-name-key="File Raw Data" description-key="Base64 or URL string of the file" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="fileName" display-name-key="File Name" description-key="Name of file (e.g. report.pdf)" of-type="SingleLine.Text" usage="bound" required="false" />
+    <property name="mimeType" display-name-key="MIME Type" description-key="MIME type of file" of-type="SingleLine.Text" usage="bound" required="false" />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
